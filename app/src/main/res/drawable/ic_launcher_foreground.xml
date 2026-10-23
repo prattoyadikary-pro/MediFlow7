@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Glowing drop aura -->
+    <path
+        android:pathData="M54,24 C54,24 39,41 39,51 C39,59.3 45.7,66 54,66 C62.3,66 69,59.3 69,51 C69,41 54,24 54,24 Z"
+        android:fillColor="#3380DEEA" />
+    
+    <!-- Water Drop -->
+    <path
+        android:pathData="M54,26 C54,26 42,42 42,50 C42,56.6 47.4,62 54,62 C60.6,62 66,56.6 66,50 C66,42 54,26 54,26 Z"
+        android:fillColor="#E0F7FA" />
+    
+    <!-- Drop specular highlight -->
+    <path
+        android:pathData="M48,43 C46,46 46,50 48,53"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round" />
+
+    <!-- Medicine Capsule Base (Left Half - Ocean Teal) -->
+    <path
+        android:pathData="M38,66 L54,66 L54,82 L38,82 C33.6,82 30,78.4 30,74 C30,69.6 33.6,66 38,66 Z"
+        android:fillColor="#00E5FF" />
+
+    <!-- Medicine Capsule Cap (Right Half - White) -->
+    <path
+        android:pathData="M54,66 L70,66 C74.4,66 78,69.6 78,74 C78,78.4 74.4,82 70,82 L54,82 Z"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Center seam line -->
+    <path
+        android:pathData="M54,66 L54,82"
+        android:strokeColor="#006064"
+        android:strokeWidth="1.2" />
+
+    <!-- Pill shine -->
+    <path
+        android:pathData="M37,70 L65,70"
+        android:strokeColor="#66FFFFFF"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round" />
+</vector>

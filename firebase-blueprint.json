@@ -1,0 +1,72 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Personal profile and health metadata for an authenticated MediFlow user.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "The Firebase Auth UID of the profile owner."
+        },
+        "displayName": {
+          "type": "string",
+          "description": "Full display name of the user."
+        },
+        "email": {
+          "type": "string",
+          "description": "Gmail address of the user."
+        },
+        "phone": {
+          "type": "string",
+          "description": "Phone number of the user."
+        },
+        "age": {
+          "type": "string",
+          "description": "Age of the user."
+        },
+        "bloodGroup": {
+          "type": "string",
+          "description": "Blood type/group (e.g., O+, A+)."
+        },
+        "weightKg": {
+          "type": "string",
+          "description": "Body weight of the user."
+        },
+        "emergencyContact": {
+          "type": "string",
+          "description": "Emergency contact name or phone number."
+        },
+        "avatarUrl": {
+          "type": "string",
+          "description": "Optional Google photo URL or avatar identifier."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when the profile was created via FieldValue.serverTimestamp()."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when the profile was last updated via FieldValue.serverTimestamp()."
+        }
+      },
+      "required": [
+        "userId",
+        "displayName",
+        "email",
+        "createdAt",
+        "updatedAt"
+      ]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": {
+        "$ref": "#/entities/UserProfile"
+      },
+      "description": "Stores personal profile and health details for each authenticated user."
+    }
+  }
+}

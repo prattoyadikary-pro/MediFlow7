@@ -1,0 +1,6 @@
+{
+  "name": "MediFlow",
+  "description": "Smart medicine reminder and personalized hydration tracker with reliable scheduling and liquid glass design",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
